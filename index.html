@@ -49,13 +49,9 @@ const Params = {
   method:'POST'
 };
 console.log(JSON.stringify(Data));
-fetch(Url, Params).then(data=>{return data.json();}).then(res=>{console.log(res);});
-
-     
+fetch(Url, Params).then(data=>{return data.json();}).then(res=>{console.log(res);});  
    };
-}
-    
-  if (page.id === 'page1') {
+}if (page.id === 'page1') {
     page.querySelector('#push-button').onclick = function() {
       document.querySelector('#myNavigator').pushPage('page2.html', {data: {title: 'Page 2'}});
     };
